@@ -1,0 +1,15 @@
+.SideBar
+  .LeftHeader
+    .LeftHeader__list
+      %p.LeftHeader__list__userName test
+      %ul.LeftHeader__list__iconlist
+        %li.LeftHeader___list__iconlist__icon
+          = link_to "#", class:"fa fa-edit" do
+            = icon('fab', 'fa-edit' )
+        %li.LeftHeader__icon__iconlist__icon
+          = link_to "#", class:"fa fa-cog" do
+            = icon('fab', 'fa-cog')
+  .GroupList
+    .GroupList__Group 
+      %p.GroupList__Group__Name test
+      %p.GroupList__Group__message メッセージはまだありません
