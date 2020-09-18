@@ -1,14 +1,16 @@
 .SideBar
   .LeftHeader
     .LeftHeader__list
-      %p.LeftHeader__list__userName test
+      %h3.LeftHeader__list__userName 
+        = current_user.name
       %ul.LeftHeader__list__iconlist
         %li.LeftHeader___list__iconlist__icon
           = link_to "#", class:"fa fa-edit" do
             = icon('fab', 'fa-edit' )
         %li.LeftHeader__icon__iconlist__icon
-          = link_to "#", class:"fa fa-cog" do
-            = icon('fab', 'fa-cog')
+          = link_to edit_user_path(current_user) do
+            = link_to "users/edit", class:"fa fa-cog" do
+              = icon('fab', 'fa-cog')
   .GroupList
     .GroupList__Group 
       %p.GroupList__Group__Name test
