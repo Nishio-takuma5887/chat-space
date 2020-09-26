@@ -39,10 +39,16 @@
     box-sizing: border-box;
     &__Name{
       font-size:15px;
+      color:#fff;
+      .a {
+        text-decoration: none;
+      }
     }
     &__message{
       font-size:11px;
       margin-top:5px;
+      text-decoration: none;
+      color:#fff;
     }
   }
 }
