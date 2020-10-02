@@ -9,7 +9,7 @@
             = icon('fab', 'fa-edit' )
         %li.LeftHeader__icon__iconlist__icon
           = link_to edit_user_path(current_user) do
-            = link_to "users/edit", class:"fa fa-cog" do
+            = link_to "/users/edit", class:"fa fa-cog" do
               = icon('fab', 'fa-cog')
   .GroupList
     - current_user.groups.each do |group|
